@@ -32,8 +32,10 @@ export default {
         `https://api.spoonacular.com/recipes/complexSearch?query=${this.query}&addRecipeInformation=true&addRecipeNutrition=true&number=20&apiKey=${process.env.API_KEY}`
       );
       this.recipes = res.data.results;
-      console.log(this.recipes);
     },
+  },
+  mounted() {
+    this.fetchData();
   },
 };
 </script>

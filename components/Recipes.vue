@@ -6,7 +6,7 @@
         <div class="card-bottom">
           <h3>{{ recipe.title }}</h3>
           <p v-html="recipe.summary"></p>
-          <button @click="loadRecipe">More info</button>
+          <nuxt-link :to="recipe.id.toString()">More info</nuxt-link>
         </div>
       </div>
     </div>
