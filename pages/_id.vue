@@ -31,7 +31,6 @@ export default {
       );
       this.recipe = res.data;
       this.steps = res.data.analyzedInstructions[0].steps;
-      console.log(typeof this.recipe.analyzedInstructions[0].steps);
     },
   },
   mounted() {
